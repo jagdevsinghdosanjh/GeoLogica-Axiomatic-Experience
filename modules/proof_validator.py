@@ -8,7 +8,7 @@ AXIOM_KEYWORDS = {
     "Axiom 4": ["coincide", "equal to one another"],
     "Axiom 5": ["whole is greater", "part"]
 }
-
+st.write("Hey! Are you able to prove yourself...")
 def validate_proof(proof_text):
     if not proof_text.strip():
         return "❌ No proof submitted. Please write your reasoning."
