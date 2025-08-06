@@ -1,0 +1,9 @@
+{
+  "postulates": [
+    "A straight line segment can be drawn joining any two points.",
+    "A straight line segment can be extended indefinitely in a straight line.",
+    "Given any straight line segment, a circle can be drawn having the segment as radius and one endpoint as center.",
+    "All right angles are equal to one another.",
+    "If a straight line falling on two straight lines makes the interior angles on the same side less than two right angles, then the two lines, if extended indefinitely, meet on that side."
+  ]
+}
