@@ -1,34 +1,33 @@
 import streamlit as st
+import spacy
 
-# Define keywords from Euclid's axioms
-AXIOM_KEYWORDS = {
-    "Axiom 1": ["equal to the same", "equal to one another"],
-    "Axiom 2": ["added to equals", "wholes are equal"],
-    "Axiom 3": ["subtracted from equals", "remainders are equal"],
-    "Axiom 4": ["coincide", "equal to one another"],
-    "Axiom 5": ["whole is greater", "part"]
+nlp = spacy.load("en_core_web_sm")
+
+AXIOM_PATTERNS = {
+    "Axiom 1": ["equal", "same thing"],
+    "Axiom 2": ["add", "equals", "whole"],
+    "Axiom 3": ["subtract", "equals", "remainder"],
+    "Axiom 4": ["coincide", "equal"],
+    "Axiom 5": ["whole", "greater", "part"]
 }
-st.title("Hey! Are you able to prove that You understand the Euclid's Geometery...")
+
 def validate_proof(proof_text):
     if not proof_text.strip():
         return "❌ No proof submitted. Please write your reasoning."
 
+    doc = nlp(proof_text.lower())
     matched_axioms = []
-    for axiom, keywords in AXIOM_KEYWORDS.items():
-        for keyword in keywords:
-            if keyword.lower() in proof_text.lower():
-                matched_axioms.append(axiom)
-                break
+
+    for axiom, keywords in AXIOM_PATTERNS.items():
+        if any(token.text in keywords for token in doc):
+            matched_axioms.append(axiom)
 
     if matched_axioms:
         feedback = "✅ Your proof references the following axioms:\n"
         for axiom in matched_axioms:
             feedback += f"- {axiom}\n"
-        if len(matched_axioms) >= 2:
-            feedback += "\n🧠 Good job! Try refining your logic further."
-        else:
-            feedback += "\n📌 Try to incorporate more axioms for a stronger proof."
+        feedback += "\n🧠 Great! Try refining your logic or adding diagrams."
     else:
-        feedback = "⚠️ No recognizable axioms found. Revisit Euclid's principles and try again."
+        feedback = "⚠️ No recognizable axioms found. Try rephrasing or reviewing Euclid's principles."
 
     return feedback
