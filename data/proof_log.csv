@@ -1,0 +1,17 @@
+timestamp,proof,matched_axioms
+2025-08-06 23:00:39,"Step 1: Assume two distinct lines
+Let’s consider two distinct lines: Line  𝐿1 and Line 𝐿2
+Step 2: Suppose they have two points in common
+Assume that 𝐿1  and 𝐿2 intersect at two distinct points, say: Point 𝐴 Point 𝐵
+Step 3: Use the definition of a line
+In Euclidean geometry, a line is uniquely determined by any two distinct points. So, if both 𝐴 and 𝐵 lie on 𝐿1, then:
+𝐿1 is the unique line passing through 𝐴 and 𝐵
+Similarly, since both 𝐴 and 𝐵 lie on 𝐿2, then:
+𝐿2 is also the unique line passing through 𝐴 and 𝐵
+Step 4: Conclude that the lines must be the same
+Since both lines pass through the same two distinct points, and a line is uniquely determined by two points: 𝐿1=𝐿2
+But this contradicts our assumption that 𝐿1 and 𝐿2 are distinct.
+Step 5: Final conclusion
+Therefore, our assumption that two distinct lines can have more than one point in common must be false.
+✅ Hence, two distinct lines cannot have more than one point in common.
+",
