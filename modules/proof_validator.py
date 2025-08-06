@@ -1,6 +1,12 @@
 import streamlit as st
 import spacy
+from modules import proof_validator
 
+with st.spinner("Analyzing your proof using Euclid's logic..."):
+    proof_text = st.text_area("Enter your geometric proof:")
+    feedback = proof_validator.validate_proof(proof_text)
+    st.markdown(feedback)
+    
 nlp = spacy.load("en_core_web_sm")
 
 AXIOM_PATTERNS = {
