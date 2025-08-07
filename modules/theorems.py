@@ -1,5 +1,4 @@
 # theorems.py
-
 import streamlit as st
 from difflib import SequenceMatcher
 from modules.logger import log_attempt
@@ -26,7 +25,8 @@ def match_axioms(user_text):
 
 def prove_theorem():
     st.title("🔍 Euclidean Theorem Checker")
-
+    st.markdown("Try proving this theorem using Euclid's axioms:")
+    st.markdown("> **Theorem:** Two distinct lines cannot have more than one point in common.")
     user_text = st.text_area("Enter your proof attempt:", height=200)
 
     if st.button("Check Proof"):
