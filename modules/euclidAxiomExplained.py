@@ -12,6 +12,6 @@ def display_axioms_explanation():
         "Axiom 5: The whole is greater than the part. A basic principle of hierarchical comparison. Example: A triangle is greater than any one of its sides. Helps establish inequalities in geometric reasoning. 🧠 How the Page Enhances Understanding. The surrounding page offers tools like:"
     ]
     
-    for j, explanation in enumerate(euclidAxiomExplained, 1):
-        st.markdown(f"**Explanation {j}:** {explanation}")
+    for i, explanation in enumerate(euclidAxiomExplained, 1):
+        st.markdown(f"**Explanation {i}:** {explanation}")
    
