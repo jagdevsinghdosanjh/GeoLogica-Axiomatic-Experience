@@ -1,6 +1,6 @@
 import streamlit as st
-from theorems import get_theorems
-from axioms import get_axioms
+from modules.theorems import get_theorems
+from modules.axioms import get_axioms
 
 def interactive_proof_builder():
     st.subheader("🧩 Interactive Proof Builder")
