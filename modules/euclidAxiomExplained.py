@@ -1,7 +1,5 @@
 import streamlit as st
 
-st.header("📐 Euclid's Axioms - Explained")
-
 def display_axioms_explanation():
     st.write("These axioms are the bedrock of classical geometry, forming the logical rules that underpin geometric proofs. The page you're viewing is designed to help users explore, visualize, and experiment with these principles interactively.")
     euclidAxiomExplained = [
