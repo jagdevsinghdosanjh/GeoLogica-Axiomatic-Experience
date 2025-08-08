@@ -1,5 +1,5 @@
 import streamlit as st
-from modules import axioms, euclidAxiomExplained, theorems, visuals
+from modules import axioms, theorems, visuals
 
 st.set_page_config(page_title="Euclid Unfolded", layout="wide")
 
