@@ -6,7 +6,7 @@ st.set_page_config(page_title="Euclid Unfolded", layout="wide")
 st.title("📐 Euclid Unfolded: Geometry Reimagined")
 st.markdown("Explore axioms, prove theorems, and visualize classical geometry interactively.")
 
-tab1, tab2, tab3,tab4 = st.tabs(["Axiom Explorer","Explanation to Axioms", "Theorem Prover", "Visual Playground"])
+tab1, tab2, tab3,tab4 = st.tabs(["Axiom Explorer","Euclid's Axioms Explained", "Theorem Prover", "Visual Playground"])
 
 with tab1:
     axioms.display_axioms()
