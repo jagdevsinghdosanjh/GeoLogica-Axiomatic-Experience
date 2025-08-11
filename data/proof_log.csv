@@ -88,3 +88,24 @@ If a line intersects two lines such that the sum of interior angles on the same 
 2025-08-07 19:41:25," If equals are added to equals, the wholes are equal.",
 2025-08-07 19:41:26," If equals are added to equals, the wholes are equal.",
 2025-08-07 19:41:44,A circle can be drawn with any center and radius,A circle can be drawn with any center and radius
+2025-08-11 19:29:52,,
+2025-08-11 20:06:16,,
+2025-08-11 20:07:35,"Step 1: Assume two distinct lines 
+Let’s consider two distinct lines: Line  𝐿1 and Line 𝐿2 
+Step 2: Suppose they have two points in common 
+Assume that 𝐿1  and 𝐿2 intersect at two distinct points, say: Point 𝐴 Point 𝐵 
+Step 3: Use the definition of a line 
+In Euclidean geometry, a line is uniquely determined by any two distinct points. So, if both 𝐴 and 
+𝐵 lie on 𝐿1, then: 
+𝐿1 is the unique line passing through 𝐴 and 𝐵 
+Similarly, since both 𝐴 and 𝐵 lie on 𝐿2, then: 
+𝐿2 is also the unique line passing through 𝐴 and 𝐵 
+Step 4: Conclude that the lines must be the same 
+Since both lines pass through the same two distinct points, and a line is uniquely determined by 
+two points: 𝐿1=𝐿2 
+But this contradicts our assumption that 𝐿1 and 𝐿2 are distinct. 
+Step 5: Final conclusion 
+Therefore, our assumption that two distinct lines can have more than one point in common must 
+be false. 
+   Hence, two distinct lines cannot have more than one point in common. ",
+2025-08-11 20:09:49,A straight line segment can be drawn joining any two points,"A straight line segment can be drawn joining any two points, Any straight line segment can be extended indefinitely"
